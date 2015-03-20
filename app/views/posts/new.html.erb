@@ -1,6 +1,7 @@
 <h1>New Post</h1>
 
 <%= form_for [@user, @post] do |f| %>
+  <%= f.hidden_field :user_id, value: @user.id %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :text %>

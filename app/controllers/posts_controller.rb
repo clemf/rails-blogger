@@ -1,4 +1,9 @@
 class PostsController < ApplicationController
+  def index
+    @user = User.find(params[:user_id])
+    @posts = Post.all.where(user_id: @user.id)
+  end
+
   def new
     @user = User.find(params[:user_id])
     @post = Post.new
@@ -13,7 +18,7 @@ class PostsController < ApplicationController
       render :new
     end
   end
-  
+
 private
   def post_params
     params.require(:post).permit(:title, :text, :user_id)
