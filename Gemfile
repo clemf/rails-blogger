@@ -50,5 +50,5 @@ group :development, :test do
 
   gem 'shoulda-matchers'
 
-  gem 'quiet-assets'
+  gem 'quiet_assets'
 end
