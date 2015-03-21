@@ -1,1 +1,9 @@
-<h1>Welcome to blog site. Select a user or create new user plz.</h1>
+<% @posts.each do |post| %>
+  <h4><%= post.title %></h4>
+  <div class="well">
+    <h5>By: <%= @users.where(id: post.user_id).first.name %></h5>
+    <p><%= post.text %></p>
+  </div>
+<% end %>
+
+<% console %>
