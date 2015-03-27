@@ -11,7 +11,7 @@ Go to [niceblog.herokuapp.com](niceblog.herokuapp.com) to see it in action.
 About
 -----
 
-Written by Clem Freeman and Amy Johnson at [Epicodus](http://www.epicodus.com/).
+Written by Clem Freeman at [Epicodus](http://www.epicodus.com/).
 
 License
 -------
