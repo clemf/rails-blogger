@@ -51,6 +51,8 @@ group :development, :test do
   gem 'shoulda-matchers'
 
   gem 'quiet_assets'
+
+  gem 'factory_girl_rails'
 end
 
 group :production do
