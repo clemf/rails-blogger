@@ -55,6 +55,10 @@ group :development, :test do
   gem 'quiet_assets'
 
   gem 'factory_girl_rails'
+
+  gem 'launchy'
+
+  gem 'poltergeist'
 end
 
 group :production do

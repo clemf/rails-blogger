@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature 'the create a user process' do
+feature 'the create a user process', js: true do
   scenario 'creates a user with proper input' do
     visit root_path
     click_link 'Sign up'
@@ -8,6 +8,7 @@ feature 'the create a user process' do
     fill_in 'Email', with: 'testtest@user.com'
     fill_in 'Password', with: 'Password'
     fill_in 'Password confirmation', with: 'Password'
+    save_screenshot('test.png')
     click_button 'Sign up'
     expect(page).to have_content 'signed up'
   end
